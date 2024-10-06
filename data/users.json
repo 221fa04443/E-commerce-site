@@ -1,0 +1,44 @@
+[
+  {
+    "name": "mkjhbgtr ",
+    "email": "221FA04443@gmail.com",
+    "password": "123",
+    "confirmpassword": "123"
+  },
+  {
+    "name": "sai",
+    "email": "sai@email.com",
+    "password": "123",
+    "confirmpassword": "123"
+  },
+  {
+    "name": "sai1",
+    "email": "sa1i@email.com",
+    "password": "789",
+    "confirmpassword": "789"
+  },
+  {
+    "name": "sai1",
+    "email": "sa11i@email.com",
+    "password": "44",
+    "confirmpassword": "44"
+  },
+  {
+    "name": "vasu",
+    "email": "v@email.com",
+    "password": "143",
+    "confirmpassword": "143"
+  },
+  {
+    "name": "vasuq",
+    "email": "ve@email.com",
+    "password": "143",
+    "confirmpassword": "123"
+  },
+  {
+    "name": "venkat",
+    "email": "venky@gmail.com",
+    "password": "123",
+    "confirmpassword": "123"
+  }
+]

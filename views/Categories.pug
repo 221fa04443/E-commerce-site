@@ -1,0 +1,42 @@
+extends layout.pug
+
+block head
+  title Flipkart Categories
+  link(rel="stylesheet", href="/public/assets/css/categories.css")
+
+block content
+  .container
+    // Move the sidebar navigation to the top
+    nav.sidebar
+      ul
+        li: a(href="#") All Categories
+        li: a(href="#") Popular Store
+        li: a(href="#") For You
+        li: a(href="#") Fashion
+        li: a(href="#") Appliances
+        li: a(href="#") Mobiles
+        li: a(href="#") Electronics
+        li: a(href="#") Home
+        li: a(href="#") Furniture
+        li: a(href="#") Beauty & Personal Care
+        li: a(href="#") Toys, Baby, Books...
+        li: a(href="#") Food & Healthcare
+
+    // Main content section
+    main.content
+      // Sale Banner Section
+      section.sale-banner
+        h2 The Sale is Live
+
+      // Product Grid Section
+      section.product-grid
+        .product-item
+          img(src="/assets/images/shopping.jpeg", alt="Dog Collars")
+          h3 Dog Collars
+          p ₹999
+          button.add-to-cart-btn Add to Cart
+        .product-item
+          img(src="/assets/images/shoes.jpeg", alt="Men's Casual Shoes")
+          h3 Men's Casual Shoes
+          p ₹2,499
+          button.add-to-cart-btn Add to Cart

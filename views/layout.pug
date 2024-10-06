@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title E-commerce - #{title}
+    link(rel="stylesheet", href="/assets/css/styles.css")
+
+    block head  // Block for additional head content
+
+  body
+    header
+      .logo
+        h1 E-commerce
+      nav
+        ul
+          li: a(href="./index") Home
+          li: a(href="./categories") Explore Categories
+          li: a(href="./account") Account
+          li: a(href="./cart") Cart
+          // Login Button
+          li: a.login-btn(href=".././login") Login
+
+    block content  // Main content block
+
+    footer
+      p &copy; 2024 E-commerce. All rights reserved.
+
+    block scripts  // Block for additional scripts

@@ -1,0 +1,61 @@
+//- Extends the layout.pug
+extends layout.pug
+
+//- Sets the title of the page
+block head
+  title Home - E-commerce
+
+//- Content block for the homepage
+block content
+  // Navigation Bar
+  nav.navbar
+    .container
+      // Logo
+      a.logo(href="/") E-commerce Logo
+
+      // Navigation Links
+      ul.nav-links
+        li
+          a(href="/products") Products
+        li
+          a(href="/about") About Us
+        li
+          a(href="/contact") Contact
+        // Login Button
+        li
+          a.login-btn(href="/login") Login
+
+  // Sale Banner
+  .sale-banner
+    span.emoji 🎉
+    span Sale is Live! Up to 50% off on selected items!
+    span.emoji 🎊
+
+  // Search Bar
+  .search-container
+    input#search-bar(type="text", placeholder="Search for products...")
+    button#search-btn Search
+
+  main
+    // Featured Products Section
+    section.featured-products
+      h2 Newly Added Products
+      .product-grid
+        // Product 1
+        .product-item(data-id="1", data-name="Product 1", data-price="29.99")
+          img(src="/assets/images/product.jpeg", alt="Product 1")
+          h4 Iphone 16 pro max
+          p ₹1,44,900.00*
+          button.add-to-cart-btn Add to Cart
+        // Product 2
+        .product-item(data-id="2", data-name="Product 2", data-price="39.99")
+          img(src="/assets/images/sony.jpg", alt="Product 2")
+          h4 SONY
+          p ₹73,999.00*
+          button.add-to-cart-btn Add to Cart
+        // Product 3
+        .product-item(data-id="3", data-name="Product 3", data-price="19.99")
+          img(src="/assets/images/hp.jpg", alt="Product 3")
+          h4 HP-PAVILION X360
+          p ₹88,940.00*
+          button.add-to-cart-btn Add to Cart

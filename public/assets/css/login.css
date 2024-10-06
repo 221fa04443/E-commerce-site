@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff6347; /* Tomato color */
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Center the nav bar */
+    display: flex;
+    justify-content: center; /* Center the items inside the nav */
+    width: fit-content; /* Adjust width to fit the content */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ff6347;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #ffd700; /* Gold color */
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #dc143c; /* Crimson */
+}
+
+/* Sale Banner Styles */
+.sale-banner {
+    background-color: #ffeb3b; /* Yellow color */
+    color: #333;
+    text-align: center;
+    padding: 30px; /* Increased padding for larger banner */
+    font-size: 2rem; /* Increased font size */
+    font-weight: bold;
+    margin: 20px 0;
+    animation: slideIn 0.5s ease-in-out;
+    animation: moveBanner 2s ease-in-out infinite;
+}
+
+/* Keyframes for continuous movement */
+@keyframes moveBanner {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Emoji styles */
+.emoji {
+    font-size: 2.5rem; /* Larger emojis */
+    vertical-align: middle;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Product Item - Reduced Size */
+.product-item {
+    text-align: center;
+    padding: 10px; /* Reduced padding */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 200px; /* Reduce the max width of product items */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.add-to-cart-btn {
+    padding: 8px 12px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #dc143c;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745; /* Green */
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+/* Center h2 text */
+h2 {
+    text-align: center;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-footer {
+    margin-top: 10px;
+  }
+  

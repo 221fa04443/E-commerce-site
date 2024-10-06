@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Register - E-commerce
+    link(rel="stylesheet", href="/assets/css/reg.css")
+
+    block head  // Block for additional head content
+
+  body
+    header
+      .logo
+        h1 E-commerce
+      nav
+        ul
+          li: a(href="./index") Home
+          li: a(href="./categories") Explore Categories
+          li: a(href="./account") Account
+          li: a(href="./cart") Cart
+          li: a.login-btn(href="./login") Login
+
+    main
+      .register-container
+        h2 Create a New Account
+        form(action="/register", method="POST")
+          .form-group
+            label(for="name") Name:
+            input#name(type="text", name="name", required)
+          .form-group
+            label(for="email") Email:
+            input#email(type="email", name="email", required)
+          .form-group
+            label(for="password") Password:
+            input#password(type="password", name="password", required)
+          .form-group
+            label(for="confirm-password") Confirm Password:
+            input#confirm-password(type="password", name="confirmpassword", required)
+          button(type="submit") Register
+
+        .form-footer
+          p Already have an account? 
+            a(href="./login") Login here
+          br
+          a(href="./index") Back to Home
+
+    footer
+      p &copy; 2024 E-commerce. All rights reserved.
+
+    block scripts  // Block for additional scripts

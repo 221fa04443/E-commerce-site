@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+    section.success-section
+        .success-container
+            h2 Registration Successful!
+            p Welcome, #{name}! Your registration was successful.
+            //img(src="./assets/img/takes_off.png" alt="Success") 
+            p#countdown You will be redirected to the login page in 10 seconds. 
+            a.success-link(href="/login") Go to Home
+
+    script(src="./assets/js/successRegisterCounter.js") 
+
+

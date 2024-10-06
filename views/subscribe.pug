@@ -1,0 +1,15 @@
+extends layout 
+
+block content-head 
+    title Registration Success
+  
+block content-body  
+    .subscribe-container
+        .subscribe-icon ✔️
+        h1 Registration Successful!
+        p Thank you for data! Exciting offers and updates will be sent to your email: 
+        
+         strong #{email}
+        p.offer-text A confirmation email has been sent.
+        a.subscribe-btn(href="/") Go to Homepage       
+

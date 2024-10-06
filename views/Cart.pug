@@ -1,0 +1,23 @@
+//- Extends layout.pug
+extends layout.pug
+
+//- Page-specific head section
+block head
+  title Cart - E-commerce
+
+//- Content block for the cart page
+block content
+  main
+    section.cart-section
+      h2 Your Cart
+      #cart-items
+        // Cart items will be dynamically inserted here
+
+      .cart-summary
+        p Total Items: span#total-items 0
+        p Total Price: span#total-price ₹0.00
+        button.checkout-btn Checkout
+
+//- Script block for page-specific scripts
+block scripts
+  script(src="/public/assets/script/cart.js")

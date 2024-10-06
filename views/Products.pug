@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Products - E-commerce
+    link(rel="stylesheet", href="\ecommerce\public\assets\styles\styles.css")
+
+  body
+    header
+      .logo
+        h1 E-commerce
+      nav
+        ul
+          li: a(href="Home.html") Home
+          li: a(href="Categories.html") Explore Categories
+          li: a(href="Account.html") Account
+          li: a(href="Cart.html") Cart
+
+    main
+      section.product-list
+        h2 Products
+        .product-grid#product-grid
+          // Products will be injected here by JavaScript
+
+    footer
+      p &copy; 2024 E-commerce. All rights reserved.
+
+    script(src="\ecommerce\public\assets\script\products.js")

@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Top Navigation Bar Styles */
+.top-nav {
+    background-color: #333; /* Dark background for top nav */
+    padding: 10px 0; /* Padding for top nav */
+}
+
+.top-nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center the items */
+}
+
+.top-nav ul li {
+    margin: 0 15px; /* Space between items */
+}
+
+.top-nav ul li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+}
+
+.top-nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Container for the sidebar and main content */
+.container {
+    display: flex; /* Flexbox for layout */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 20px; /* Padding around sidebar */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Spacing between items */
+}
+
+.sidebar ul li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styles */
+.content {
+    flex-grow: 1; /* Allow content to take remaining space */
+    padding: 20px; /* Padding around content */
+}
+
+/* Sale Banner Styles */
+.sale-banner {
+    background-color: #ffeb3b; /* Yellow background */
+    color: #333; /* Dark text */
+    text-align: center; /* Center text */
+    padding: 30px; /* Padding for the banner */
+    font-size: 2rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin: 20px 0; /* Margin above and below */
+}
+
+/* Product Grid Styles */
+.product-grid {
+    display: flex; /* Flexbox for product layout */
+    justify-content: space-around; /* Space between products */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+/* Product Item Styles */
+.product-item {
+    text-align: center; /* Center align text */
+    padding: 10px; /* Padding around product item */
+    margin: 10px; /* Margin between product items */
+    border: 1px solid #ddd; /* Border around product */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 200px; /* Limit max width */
+}
+
+.product-item img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Add to Cart Button Styles */
+.add-to-cart-btn {
+    padding: 8px 12px; /* Button padding */
+    background-color: #ff6347; /* Tomato background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #dc143c; /* Darker red on hover */
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed; /* Fixed position for notification */
+    top: 20px; /* Position from the top */
+    right: 20px; /* Position from the right */
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text */
+    padding: 10px; /* Padding around notification */
+    border-radius: 4px; /* Rounded corners */
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+    z-index: 1000; /* Ensure it appears above other content */
+}

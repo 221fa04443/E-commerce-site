@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Login - E-commerce
+    link(rel="stylesheet", href="/assets/css/login.css")
+
+    block head  // Block for additional head content
+
+  body
+    header
+      .logo
+        h1 E-commerce
+      nav
+        ul
+          li: a(href="./index") Home
+          li: a(href="./categories") Explore Categories
+          li: a(href="./account") Account
+          li: a(href="./cart") Cart
+          li: a.login-btn(href="./login") Login
+
+    main
+      .login-container
+        h2 Login to Your Account
+        form(action="/login", method="POST")
+          .form-group
+            label(for="email") Email:
+            input#email(type="email", name="email", required)
+          .form-group
+            label(for="password") Password:
+            input#password(type="password", name="password", required)
+          button(type="submit") Login
+
+        .form-footer
+          p Don't have an account? 
+            a(href="./register") Register here
+          br
+          a(href="./index") Back to Home
+
+    footer
+      p &copy; 2024 E-commerce. All rights reserved.
+
+    block scripts  // Block for additional scripts
